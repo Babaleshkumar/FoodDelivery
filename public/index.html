@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My HungryMind</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        body {
+            background-color: rgb(250, 248, 247);
+        }
+
+        #landing {
+            background-image: url("assets/bg1.jpg");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            height: 680px;
+            color: white;
+        }
+
+        #landing p {
+            font-size: 22px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+        }
+
+        #center {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        #cards div {
+            width: 400px;
+        }
+
+        .card-title {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .card-footer p {
+            text-align: justify;
+            padding: 10px;
+        }
+
+        .card-body img {
+            width: 400px;
+            padding: 20px;
+        }
+
+        .mycard {
+            border: 2px solid blue;
+            border-radius: 20px;
+            margin: 10px;
+            background-color: darksalmon;
+        }
+        .mycard:hover{
+            background-color: aqua;
+        }
+
+        #cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .nav-item a {
+            font-size: 20px;
+        }
+
+        #ourClients {
+            background-image: url(../public/assets/bg.jpg);
+        }
+
+        #contactUs {
+            background-color: rgb(60, 183, 85);
+        }
+
+        @media screen and (max-width:1000px) {
+            .mycard {
+                width: 100%;
+                background-color: aqua;
+                justify-content: center;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="position-fixed top-0 w-100">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-2 ">
+                <div class="container-fluid ">
+                    <a class="navbar-brand me-5" style="font-size: 50px;" href="#"><span><img
+                                src="../public/assets/logo.png" width="70px" height="70px"></span> My HungryMind</a>
+                    <button class="navbar-toggler " data-bs-toggle="collapse" data-bs-target="#menuList">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="menuList">
+                        <div class="d-flex justify-content-between">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link text-white me-3" target="frameBody" href="#landing">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white me-3" target="frameBody" href="#services">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white me-3" target="frameBody" href="#ourClients">Our
+                                        Clients</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" target="frameBody" href="#contactUs">Contact us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section id="landing" class="mt-2">
+        <div class="d-flex justify-content-center align-items-center h-100 text-center" id="center">
+            <div>
+                <h1 class="font-weight-bold " style="font-size: 50px;">Welcome to My HungryMind</h1>
+                <p>All of us food is prepared by our team of trained kitchen staff from the sealed glass
+                    kitchen where you can see</p>
+                <p>your food being made,withaut risk of little pows getting involved.</p>
+                <button class="btn btn-danger btn-lg">Order Now</button>
+            </div>
+        </div>
+    </section>
+    <div style="width: 100%; height: 10px; background-color: black;"></div>
+    <section class="mt-4 container-fluid" id="services">
+        <h1 class="text-center p-3" style="font-size: 60px;">Our Services</h1>
+        <div id="cards">
+            <div class="mycard">
+                <div class="card-body">
+                    <img src="../public/assets/1.png">
+                    <h2 class="card-title">Food Catering</h2>
+                </div>
+                <div class="card-footer">
+                    <p>Catering is the process or business of preparing food and providing food services for clients at remote locations, such as hotels, restaurants, offices, concerts, and events. </p>
+                </div>
+            </div>
+            <div class="mycard">
+                <div class="card-body">
+                    <img src="../public/assets/2.png" style="height: 250px;">
+                    <h2 class="card-title">Bulk Ordering</h2>
+                </div>
+                <div class="card-footer">
+                    <p>Bulk foods are food items offered in large quantities, which can be purchased in large, bulk lots or transferred from a bulk container into a smaller container for purchase.</p>
+                </div>
+            </div>
+            <div class="mycard">
+                <div class="card-body">
+                    <img src="../public/assets/3.png" style="height: 250px;">
+                    <h2 class="card-title">Food Ordering</h2>
+                </div>
+                <div class="card-footer">
+                    <p>An online food ordering system allows your business to accept and manage orders placed online for delivery or takeaway. Customers browse a digital menu, either on an app or website and place and pay for their order online.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div style="width: 100%; height: 10px; background-color: black;"></div>
+    <section id="ourClients">
+        <div style="background-color: rgba(0, 0, 0, 0.3); padding: 20px;">
+            <h1 class="text-center p-3" style="font-size: 60px;">Our Clients</h1>
+            <div class="text-center">
+                <img src="../public/assets/logo1.png" width="200px" height="200px">
+                <img src="../public/assets/logo2.png" width="200px" height="200px">
+                <img src="../public/assets/logo3.png" width="200px" height="200px">
+                <img src="../public/assets/logo4.png" width="200px" height="200px">
+            </div>
+        </div>
+    </section>
+    <div style="width: 100%; height: 10px; background-color: black;"></div>
+    <section id="contactUs">
+        <h1 class="text-center p-3" style="font-size: 60px;">Contact Us</h1>
+        <div class="d-flex justify-content-center align-items-center h-100 p-5">
+            <form>
+                <label for="name" class="form-label">Name</label>
+                <input type="text" name="name" class="form-control">
+                <label for="mail" class="form-label">Email</label>
+                <input type="text" name="mail" class="form-control">
+                <label for="number" class="form-label">Phone Number</label>
+                <input type="number" name="number" class="form-control">
+                <label for="message" class="form-label">Message</label>
+                <textarea name="message" cols="100" rows="10" class="form-control"></textarea>
+            </form>
+        </div>
+    </section>
+    <footer class="bg-black text-white p-2 text-center" style="height: 40px;">
+        <div>copyright &copy; www.MyHungryMind.com. All right reserved </div>
+    </footer>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
